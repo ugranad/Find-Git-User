@@ -1,3 +1,3 @@
 # Find-Git-User
 
-Simple HTML and JavaScript application.
+Simple App built using Bootstrap, HTML and JavaScript.
