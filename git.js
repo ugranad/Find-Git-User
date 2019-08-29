@@ -1,7 +1,7 @@
 class Github {
   constructor() {
-    this.client_id = 'Enter Client id from Oauth';//Since git permits only 100 requests per hour!
-    this.client_secret = 'Enter Client secret from Oauth';
+    this.client_id = 'Git_Client_ID';//Since git permits only 100 requests per hour!
+    this.client_secret = 'Git_Client Secret';
     this.repos_count = 5;//limit the list of repos
     this.repos_sort = 'created:asc' // show the latest repos
   }
