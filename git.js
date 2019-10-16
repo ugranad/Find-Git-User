@@ -1,9 +1,9 @@
 class Github {
   constructor() {
-    this.client_id = 'Git_Client_ID';//Since git permits only 100 requests per hour!
-    this.client_secret = 'Git_Client Secret';
-    this.repos_count = 5;//limit the list of repos
-    this.repos_sort = 'created:asc' // show the latest repos
+    this.client_id = '49b2b99bfc82a26d79b7';
+    this.client_secret = 'a19783ee9f0de01dbdc0d286afe3d5347c274f00';
+    this.repos_count = 5;
+    this.repos_sort = 'created: asc';
   }
 
   async getUser(user) {
@@ -11,10 +11,8 @@ class Github {
 
     const repoResponse = await fetch(`https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repos_sort}&client_id=${this.client_id}&client_secret=${this.client_secret}`);
 
-
     const profile = await profileResponse.json();
     const repos = await repoResponse.json();
-
 
     return {
       profile,
